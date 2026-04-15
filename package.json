@@ -1,0 +1,19 @@
+{
+  "name": "bun-test-repo",
+  "version": "1.0.0",
+  "description": "Test repository for GUIDE-1949 Bun package manager support",
+  "type": "module",
+  "main": "src/index.ts",
+  "scripts": {
+    "build": "bun build src/index.ts --outdir dist",
+    "test": "bun test",
+    "start": "bun run src/index.ts"
+  },
+  "dependencies": {
+    "chalk": "^5.3.0",
+    "commander": "^12.0.0"
+  },
+  "devDependencies": {
+    "typescript": "^5.0.0"
+  }
+}
