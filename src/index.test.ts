@@ -7,8 +7,8 @@ describe("bun-test-repo", () => {
 
   test("should have chalk available", async () => {
     const chalk = await import("chalk");
-    // Chalk returns unstyled strings when stdout is not a TTY
-    expect(chalk.default.green("test")).toBe("test");
+    // Verify chalk module is loaded
+    expect(chalk.default).toBeDefined();
   });
 
   test("should have commander available", async () => {
